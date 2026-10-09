@@ -1,0 +1,26 @@
+# auto808 dependencies.
+# Core (needed for synth, vault, vfx, minimax, logo):
+numpy
+scipy
+pandas
+pyyaml
+cryptography
+svgwrite
+mido
+
+# Audio analysis (spatial engine, minimax feature extraction):
+# librosa
+
+# Video / VFX (spatial engine):
+# opencv-python
+
+# VFX pipeline optional backends (graceful stubs without them):
+# imageio
+# onnxruntime
+# opentimelineio
+
+# Lyrics prosody (optional; synth works without it):
+# nltk
+
+# Test runner:
+pytest

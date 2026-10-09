@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+*.wav
+*.mp4
+*.svg
+minimax_artist_workspace/
+ingest/
+renders/
+enclave/
+*.log
