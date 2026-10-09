@@ -3,7 +3,7 @@ import os
 import numpy as np
 import pytest
 
-from auto808 import synth
+from pmve import synth
 
 
 def test_note_to_midi():

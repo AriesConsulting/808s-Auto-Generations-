@@ -3,8 +3,8 @@ import wave
 
 import pytest
 
-from auto808 import minimax
-from auto808.minimax import MiniMaxDatasetBuilder, PipelineConfig
+from pmve import minimax
+from pmve.minimax import MiniMaxDatasetBuilder, PipelineConfig
 
 
 def test_config_defaults():

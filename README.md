@@ -1,4 +1,4 @@
-# auto808
+# Procedural Music and Video Engine
 
 Music production and VFX pipelines by Aries Hilton / Frozen In Flames.
 Rebuilt from the original Colab notebooks into a proper Python package:

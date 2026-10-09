@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""auto808 command line: every pipeline from the notebooks, one entry point.
+"""pmve command line: every pipeline from the notebooks, one entry point.
 
 Usage:
     python cli.py synth-demo [--out out.wav]
@@ -20,17 +20,17 @@ import sys
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)),
                                 "src"))
 
-from auto808 import __version__  # noqa: E402
+from pmve import __version__  # noqa: E402
 
 
 def cmd_synth_demo(args: argparse.Namespace) -> int:
-    from auto808 import synth
+    from pmve import synth
     synth.demo(args.out)
     return 0
 
 
 def cmd_minimax(args: argparse.Namespace) -> int:
-    from auto808 import minimax
+    from pmve import minimax
     argv = ["--workspace", args.workspace, "--catalog", args.catalog]
     if args.config:
         argv += ["--config", args.config]
@@ -40,7 +40,7 @@ def cmd_minimax(args: argparse.Namespace) -> int:
 
 
 def cmd_spatial(args: argparse.Namespace) -> int:
-    from auto808 import spatial
+    from pmve import spatial
     try:
         spatial.render(args.input, output_path=args.out,
                        engine=args.engine, preview=args.preview)
@@ -51,13 +51,13 @@ def cmd_spatial(args: argparse.Namespace) -> int:
 
 
 def cmd_vfx(args: argparse.Namespace) -> int:
-    from auto808 import vfx
+    from pmve import vfx
     vfx.run_demo(args.dir)
     return 0
 
 
 def cmd_upscale(args: argparse.Namespace) -> int:
-    from auto808 import upscale
+    from pmve import upscale
     try:
         upscale.process_video(args.input, args.out)
     except RuntimeError as e:
@@ -67,7 +67,7 @@ def cmd_upscale(args: argparse.Namespace) -> int:
 
 
 def cmd_logo(args: argparse.Namespace) -> int:
-    from auto808 import logo
+    from pmve import logo
     try:
         logo.create_lucid_triangulation_logo(args.out)
     except ImportError as e:
@@ -77,15 +77,15 @@ def cmd_logo(args: argparse.Namespace) -> int:
 
 
 def cmd_vault_demo(args: argparse.Namespace) -> int:
-    from auto808 import vault
+    from pmve import vault
     vault.demo()
     return 0
 
 
 def main() -> int:
     ap = argparse.ArgumentParser(
-        prog="auto808",
-        description=f"auto808 {__version__}: music production and VFX pipelines")
+        prog="pmve",
+        description=f"pmve {__version__}: music production and VFX pipelines")
     sub = ap.add_subparsers(dest="cmd", required=True)
 
     s = sub.add_parser("synth-demo", help="synthesize a chord and mix to WAV")

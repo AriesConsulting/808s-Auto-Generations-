@@ -1,6 +1,6 @@
 import pytest
 
-from auto808 import upscale
+from pmve import upscale
 
 
 def test_build_filter_chain():

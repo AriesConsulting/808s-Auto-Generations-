@@ -42,7 +42,7 @@ except ImportError:
 
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s | %(levelname)s | %(message)s')
-log = logging.getLogger("auto808.vfx")
+log = logging.getLogger("pmve.vfx")
 
 
 class Pipeline:

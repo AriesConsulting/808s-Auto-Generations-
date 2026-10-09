@@ -5,7 +5,7 @@ import pytest
 
 cryptography = pytest.importorskip("cryptography")
 
-from auto808 import vault
+from pmve import vault
 from cryptography.fernet import Fernet
 
 

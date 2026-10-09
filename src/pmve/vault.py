@@ -122,7 +122,7 @@ def demo() -> Dict[str, str]:
     vault = LaborVault("Ambassador_Alpha")
     vault.anchor(b"Sample MIDI Data")
     vault.harden(b"Proprietary Melody")
-    vault.isolate(base_dir="/tmp/auto808_enclave")
+    vault.isolate(base_dir="/tmp/pmve_enclave")
     vault.spectral_audit(np.random.randn(1000))
     vault.check_trigger([24, 44, 48, 63, 78, 93, 107])
     report = vault.deployment_report()

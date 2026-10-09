@@ -1,7 +1,7 @@
 import numpy as np
 import pytest
 
-from auto808 import spatial
+from pmve import spatial
 
 
 def test_missing_deps_raise_helpful_errors():

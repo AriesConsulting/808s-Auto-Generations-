@@ -1,4 +1,4 @@
-# auto808 dependencies.
+# pmve dependencies.
 # Core (needed for synth, vault, vfx, minimax, logo):
 numpy
 scipy

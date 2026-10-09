@@ -1,4 +1,4 @@
-"""auto808: Aries Hilton's music production and VFX pipeline toolkit.
+"""pmve: Aries Hilton's music production and VFX pipeline toolkit.
 
 Modules are importable independently so heavy optional dependencies
 (opencv, librosa, torch-family) are only needed for the pieces you use:

@@ -2,7 +2,7 @@ import pytest
 
 svgwrite = pytest.importorskip("svgwrite")
 
-from auto808 import logo
+from pmve import logo
 
 
 def test_logo_renders(tmp_path):

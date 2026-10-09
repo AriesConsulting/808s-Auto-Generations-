@@ -4,7 +4,7 @@ import os
 import numpy as np
 import pytest
 
-from auto808 import vfx
+from pmve import vfx
 
 
 def _ctx(tmp_path, frame=None):
